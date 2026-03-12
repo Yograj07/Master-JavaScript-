@@ -1,3 +1,4 @@
+//? ----> Created a toaster -- learned how setTimeout and & setInterval works
 function createToaster(config) {
 
     return function (notification) {

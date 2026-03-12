@@ -1,0 +1,68 @@
+<!-- Created a powerfull animation and learned a gsap concepts as well as learned dom manipulation + code throtting and more -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 04</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* background-color: #0a0a0a; */
+            height: 400px;
+            width: 900px;
+            border-radius: 20px;
+            font-size: 15rem;
+            /* border:1px solid rebeccapurple; */
+            text-align: center;
+            cursor: not-allowed;
+        }
+        
+        .imgdiv {
+            height: 250px;
+            width: 150px;
+            position: absolute;
+            overflow: hidden;
+            cursor: not-allowed;
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+        }
+        
+        .imgdiv img {
+            height: 100%;
+            cursor: not-allowed;
+            width: 100%;
+            object-fit: cover;
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="center">
+        YOGRAJ
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-// * Step 1 : rectangle par mouse track kar na , mouse rectangle par hai ya nahi ye dekh na.
+// ? --> Created rectangle color changer -- learned how mouseleave , mouseOver , gsap.utils.mapRange etc etc works & how to biuld basic logics.
 
 let rect = document.getElementById("rect");
 rect.style.backgroundColor = "#0a0a0a";
@@ -34,7 +34,7 @@ let changeColor = () => {
       gsap.to(rect, {
         backgroundColor: `rgb(0,0,${blue})`,
         ease: Power2,
-        borderRadius:`30px`
+        borderRadius: `30px`,
       });
     }
   });
