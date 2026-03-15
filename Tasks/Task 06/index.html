@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color changer button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background: cornflowerblue;
+            color: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            text-align: center;
+            gap: 10px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        #container{
+            height: 400px;
+            width:  500px;
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+        }
+        #btn{
+            padding: .8vw;
+            border: none;
+            background: #000;
+            color: #f4d3d3;
+            font-size: 1.2rem;
+            font-weight: 300;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Color changer button </h1>
+
+    <div id="container">
+
+    </div>
+    <button id="btn">Change Color</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

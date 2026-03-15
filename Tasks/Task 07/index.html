@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live character counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background: cornflowerblue;
+            color: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            text-align: center;
+            gap: 10px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+        input{
+            width: 25%;
+            padding: .7vw;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Live character counter </h1>
+
+    <input type="text" name="txt" id="txt-input" placeholder="Write Something Here....">
+    <p><span>Character Written - </span><span id="txt-counter">0</span></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

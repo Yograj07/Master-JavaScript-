@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic list builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background: cornflowerblue;
+            color: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            text-align: center;
+            gap: 10px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            width: 45%;
+            text-align: justify;
+        }
+
+        .hide {
+
+            display: none;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+            width: 180%;
+        }
+
+        .list-container input {
+            width: 60%;
+        }
+
+        .list-container input,
+        #add-btn {
+
+            padding: .8vw;
+            border: none;
+            border-radius: 5px;
+            font-size: 1vw;
+        }
+
+        #add-btn {
+            cursor: pointer;
+            transition: all .4s ease;
+        }
+
+        #add-btn:hover {
+            transform: scale(1.02);
+        }
+
+        #add-btn:active {
+            transform: scale(0.9);
+        }
+
+        .container {
+            border: 2px solid #d4d4d4;
+            border-radius: 5px;
+            padding: 1vw;
+            width: 150%;
+            text-align: center;
+
+        }
+
+        .container ul {
+
+            width: 100%;
+        }
+
+        .container li {
+            list-style-type: none;
+            margin: 0.9vw;
+            padding: .6vw;
+            border-radius: 4px;
+            background-color: rebeccapurple;
+            transition: all .5s ease-in-out;
+            color: #fff;
+        }
+
+        li:hover {
+            background-color: rgb(121, 71, 171);
+            transform: scale(0.98);
+            cursor: pointer;
+        }
+        #empty{
+            color: rgb(137, 16, 16);
+            font-size: 1.2rem;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier flex">
+        <h1> Dynamic list builder</h1>
+
+        <div class=" flex">
+
+            <div class="list-container">
+                <input autocomplete="off" type="text" name="inp" id="txt-input" placeholder="Add List Items.....">
+                <button id="add-btn">Add Item</button>
+            </div>
+
+            <div class="container">
+
+                <ul id="list-items">
+                    <span id="empty">* Enter something to add in a list !</span>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

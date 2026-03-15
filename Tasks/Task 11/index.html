@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11 :Todo list with done state </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background-color: #0a0a0a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+        }
+
+        .input-container {
+            color: #0f0f0f;
+            display: flex;
+            padding: 1vw;
+            background-color: #d4d4d4;
+            border-radius: 10px;
+            justify-content: space-between;
+        }
+
+        .input-container input,
+        .input-container button {
+            padding: 1.3vw;
+            font-size: 1vw;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .input-container button {
+            width: 28%;
+            cursor: pointer;
+        }
+
+        .input-container button:hover {
+            transform: scale(.98);
+        }
+
+        .input-container input {
+            width: 70%;
+        }
+
+        .list {
+            margin-top: 1vw;
+
+        }
+
+        li span {
+            width: 100%;
+            align-items: start;
+            display: flex;
+        }
+
+        ul li:hover {
+            transform: scale(.98);
+            cursor: pointer;
+        }
+
+        ul li button {
+            transition: all .5s ease;
+        }
+
+        ul li button:hover {
+            transform: scale(1.6);
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        ul li {
+            transition: all .5s ease;
+            list-style-type: none;
+            padding: 0.6vw;
+            margin: .6vw;
+            display: flex;
+            align-items: center;
+            font-size: 1.5vw;
+            gap: .9vw;
+            justify-content: space-between;
+            border-radius: 5px;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: rebeccapurple;
+        }
+
+        ul li:nth-child(even) {
+            background-color: cornflowerblue;
+            color: #0f0f0f;
+        }
+
+        ul li button {
+            padding: 0.5vw;
+            font-size: 1.1vw;
+            text-transform: capitalize;
+            border: none;
+            border-radius: 10px;
+            background-color: tomato;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        ul {
+            padding: 10px;
+            /* border: 2px solid #3676E8; */
+            border-radius: 10px;
+            max-height: 50vh;
+            overflow: auto;
+        }
+
+        .list ul::-webkit-scrollbar{
+            height: 0%;
+            width: 0%;
+        }
+
+        #msg {
+            color: rgb(255, 38, 0);
+            font-weight: 600;
+            display: none;
+        }
+
+        p {
+            margin: 1vw;
+            color: coral;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="input-container">
+            <input type="text" placeholder="Enter task" id="inp" autocomplete="off">
+            <button id="btn-add">Add Task</button>
+        </div>
+        <div class="list">
+            <p>Remaining Tasks : <span id="Remaining">0</span></p>
+            <ul id="todo-list">
+                <span id="msg">
+                    Add Todo/s !
+                </span>
+                <!-- <li>list 1 <button>delete</button></li>
+                <li>list 2 <button>delete</button></li>
+                <li>list 3 <button>delete</button></li>
+                <li>list 4 <button>delete</button></li>
+                <li>list 5 <button>delete</button></li>
+                <li>list 6 <button>delete</button></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12 — Search filter on a list</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        html,body{
+            background-color: #4d4d4d;
+            height: 100vh;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            gap: .9vw;
+        }
+        ul{
+            display: flex;
+            max-width: 50%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            list-style-type: none;
+            margin: .5vw;
+            background-color: #d3d3d3;
+            color: #000;
+            font-weight: 600;
+            font-size: 1.1vw;
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            border-radius: 5px;
+            min-width: 120px;
+            padding: .8vw;
+            box-shadow: 0 0 15px 2px rgba(214, 216, 219, 0.4);
+        }
+        input{
+            border: none;
+            border-radius: 5px;
+            padding:1.2vw;
+            width: 35%;
+        }
+        #err{
+            color: tomato;
+            display: none;
+            font-size: 2vw;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" name="txt" id="inp" placeholder="Type to Filter......" autocomplete="off">
+
+    <p id="err">No Names Found !</p>
+    <ul>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
